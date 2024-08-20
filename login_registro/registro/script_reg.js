@@ -8,7 +8,7 @@ $Botao.addEventListener('click', function() {
 
     //Verifica se as senhas digitadas sao inguais e salva localmente no navegador
     if ($Senha == "" && $SenhaConf == "" || $Usuario == "") {
-     $Mensagem.textContent = "Preencha todos os espaços"
+     $Mensagem.innerHTML = "Preencha todos os espaços"
      $Mensagem.style.display = "block"
 
     }else if ($Senha == $SenhaConf) {
@@ -17,7 +17,7 @@ $Botao.addEventListener('click', function() {
     location.href = '../../index.html';
     
    }else {
-        $Mensagem.textContent = "As senhas devem ser iguais"
+        $Mensagem.innerHTML = "As senhas devem ser iguais"
         $Mensagem.style.display = "block"
    }
    
