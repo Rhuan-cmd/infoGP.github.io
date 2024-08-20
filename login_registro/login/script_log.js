@@ -11,10 +11,15 @@ $Botao.addEventListener('click', function() {
     const $Usuario = document.getElementById("usuario").value;
     const $Senha = document.getElementById("senha").value;
 
+    if ($Senha == "" || $Usuario == "") {
+     $Mensagem.textContent = "Preencha todos os espaços"
+     $Mensagem.style.display = "block"
+    }
     
     if ($Usuario == salvo_uso && $Senha == salvo_senh) {
         location.href = 'Programas/index_prog.html';
     }else {
+        $Mensagem.textContent = "Usuário não cadastrado<br>Tente outro usuário ou crie uma conta!"
         $Mensagem.style.display = 'block';
     }
 
