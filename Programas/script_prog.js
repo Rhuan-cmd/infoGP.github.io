@@ -16,6 +16,7 @@ if (saldo == null) {
 $Buttons.forEach(button => { //Será aplicado para cada botão individualmente
     button.addEventListener('click', function() {
         button.classList.add("click");
+       saldo = 0.00;
     });
     button.addEventListener('animationend', function() {
         button.classList.remove("click");
